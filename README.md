@@ -1,1 +1,1 @@
-# Poll-Application
+# django from scratch
