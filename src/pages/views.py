@@ -3,13 +3,15 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home_view(response, *args, **kwargs):
-    return HttpResponse("<h1>Home page<h1>")
+    # return HttpResponse("<h1>Home page<h1>")
+    #using django template
+    return render(response, "home.html", {}) 
 
 def about_view(response, *args, **kwargs):
-    return HttpResponse("<h1>About Page<h1>")
-
+    # return HttpResponse("<h1>About Page<h1>")
+    return render(response, "about.html", {})
 def contacts_view(response, *args, **kwargs):
-    return HttpResponse("<h1>Contact Page<h1>")
+    return render(response, "contacts.html", {})
 
 def features_view(response, *args, **kwargs):
-    return HttpResponse("<h1>Features page<h1>")
+    return render(response, "features.html", {})
