@@ -10,3 +10,6 @@ def about_view(response, *args, **kwargs):
 
 def contacts_view(response, *args, **kwargs):
     return HttpResponse("<h1>Contact Page<h1>")
+
+def features_view(response, *args, **kwargs):
+    return HttpResponse("<h1>Features page<h1>")
