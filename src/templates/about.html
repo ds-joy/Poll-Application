@@ -2,6 +2,18 @@
 
 {% block content %}
 
+<p>
+    My name is {{ name }} and I'am {{ age }} years old
+    </br> 
+    {{ my_list }}
+
+    <ul>
+    {% for items in my_list  %}
+        <li>{{ items }}</li>
+    {% endfor %}
+    </ul>
+</p
+
 <h1>This is about</h1>
 <p>This is body. Using django templates</p>
 

@@ -8,8 +8,18 @@ def home_view(response, *args, **kwargs):
     return render(response, "home.html", {}) 
 
 def about_view(response, *args, **kwargs):
-    # return HttpResponse("<h1>About Page<h1>")
-    return render(response, "about.html", {})
+
+    about_me = {
+        "name" : "Debasish Sarker",
+        "age" : 23,
+        "my_list" : ["apple", "orange", "banana"],
+    }
+   
+    return render(response, "about.html", about_me)
+
+
+
+
 def contacts_view(response, *args, **kwargs):
     return render(response, "contacts.html", {})
 
